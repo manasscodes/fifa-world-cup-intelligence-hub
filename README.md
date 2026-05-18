@@ -97,11 +97,11 @@ The model and all mappings are serialised with joblib in the models/ directory.
 
 ## 📊 Example Predictions
 
-|Home Team | Away Team | Home Win | Draw | Away Win |
+| Home Team | Away Team | Home Win | Draw | Away Win |
 |---|---|---|---|---|
-|Brazil |Germany |45.2% |27.1% |27.7% |
-|Argentina |Germany |13.1% |33.5% |53.4% |
-|Germany |Curaçao |98.0% |0.0% |2.0% |
+| Brazil | Germany | 45.2% | 27.1% | 27.7% |
+| Argentina | Germany | 13.1% | 33.5% | 53.4% |
+| Germany | Curaçao | 98.0% | 0.0% | 2.0% |
 
 ## 🛣 Roadmap
 
