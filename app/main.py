@@ -81,7 +81,7 @@ if mode == "Single Match":
         )
         fig.update_traces(textposition='outside')
         fig.update_layout(showlegend=False, yaxis_range=[0, 1])
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
 
         max_outcome = max(probs, key=probs.get)
         emoji = {'home_win': '🏠', 'draw': '🤝', 'away_win': '✈️'}
@@ -136,7 +136,7 @@ if mode == "Single Match":
         )
         fig.update_traces(textposition='outside')
         fig.update_layout(showlegend=False, yaxis_range=[0, 1])
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
 
 elif mode == "2026 World Cup Fixtures":
     if load_fixtures:
