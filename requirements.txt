@@ -6,6 +6,4 @@ scikit-learn
 plotly
 streamlit
 joblib
-tensorflow
-keras
 shap
