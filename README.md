@@ -1,119 +1,405 @@
 # ⚽ FIFA World Cup Intelligence Hub
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://fifa-world-cup-intelligence-app.streamlit.app/)  
-*A multi‑module World Cup analytics platform that predicts match outcomes, clusters players by style, and tracks live fan sentiment.*
+<div align="center">
+
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHZ0YXcycjJob2twdGZyNWZkdjZxZ3pxMGQzbnMxbnc2ZTVoMHlrdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pXyZ8LcM7PrNgN3UtO/giphy.gif" width="50%" />
+
+<h3>
+AI • Football Analytics • Player Intelligence • Match Prediction
+</h3>
+
+<p>
+A next-generation football analytics platform that combines machine learning, player clustering, interactive scouting dashboards, and real-time football intelligence.
+</p>
+
+<br>
+
+[![Python](https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge\&logo=python)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)](https://streamlit.io/)
+[![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge\&logo=scikitlearn\&logoColor=white)](https://scikit-learn.org/)
+[![Plotly](https://img.shields.io/badge/Plotly-111111?style=for-the-badge\&logo=plotly)](https://plotly.com/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge\&logo=pandas)](https://pandas.pydata.org/)
+[![License](https://img.shields.io/badge/MIT-License-green?style=for-the-badge)]()
+
+<br>
+
+[🚀 Live Demo](https://fifa-world-cup-intelligence-app.streamlit.app/) •
+[📊 Features](#-features) •
+[🧠 ML Pipeline](#-machine-learning-pipeline) •
+[⚙️ Installation](#️-installation) •
+[📸 Screenshots](#-screenshots)
+
+</div>
 
 ---
 
-## 📌 Features
+# 🌍 Overview
 
-### 1. Match Outcome Predictor (Live)
-- Predicts **win / draw / loss** probabilities for any World Cup fixture.
-- Uses a **Random Forest** model trained on **964 historical World Cup matches** (1930–2022).
-- Features: team strength, goal difference, head‑to‑head records, home advantage.
-- Interactive bar chart built with **Plotly**.
+The **FIFA World Cup Intelligence Hub** is an AI-powered football analytics platform designed to simulate how modern football scouting and prediction systems work.
 
-### 2. Player Performance Dashboard (Coming Soon)
-- Explore Transfermarkt player stats.
-- Cluster players by playing style using **K‑Means**.
-- Radar charts and scatter plots for player comparison.
+The project combines:
 
-### 3. Real‑Time Sentiment Tracker (Coming Soon)
-- Live Twitter sentiment analysis during matches.
-- **Hugging Face Transformers** for emotion detection.
-- **Plotly Dash** dashboard showing sentiment spikes at key match events.
+* ⚽ Match outcome prediction
+* 🧠 Machine learning clustering
+* 📊 Interactive visual analytics
+* 🔍 Player intelligence dashboards
+* 📈 Radar profile comparisons
+* 🌐 Real-time football insights
+
+Built entirely using public datasets, machine learning pipelines, and interactive data applications.
 
 ---
 
-## 🧠 Tech Stack
-
-- **Languages:** Python
-- **Data Processing:** Pandas, NumPy
-- **Machine Learning:** Scikit‑learn (Random Forest, K‑Means)
-- **NLP:** Hugging Face Transformers
-- **Visualisation:** Plotly, Seaborn, Matplotlib
-- **Dashboard:** Streamlit, Plotly Dash
-- **Deployment:** Streamlit Community Cloud
+# ✨ Features
 
 ---
 
-## 📂 Project Structure
+## 🏆 1. Match Outcome Predictor
 
-fifa-world-cup-intelligence-hub/ ├── data/ # Raw datasets (not committed) ├── notebooks/ # Exploratory & prototyping notebooks │ └── 01_match_predictor_prototype.ipynb ├── src/ # Core ML module │ └── predictor.py ├── models/ # Serialised model & mappings ├── app/ # Streamlit app │ ├── main.py │ └── pages/ └── README.md
+Predicts:
+
+* Home Win
+* Draw
+* Away Win
+
+using a trained **Random Forest classifier** built on historical FIFA World Cup data.
+
+### ✅ Model Inputs
+
+* Historical win rate
+* Goal difference
+* Head-to-head records
+* Team strength
+* Home advantage
+
+### 📈 Output
+
+Interactive probability visualizations with Plotly.
+
+```text
+Brazil vs Germany
+
+🏠 Home Win: 45.2%
+🤝 Draw: 27.1%
+✈️ Away Win: 27.7%
+```
 
 ---
 
-## 🚀 Quick Start
+## 🧬 2. Player Intelligence Dashboard
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/manas-kolaskar/fifa-world-cup-intelligence-hub.git
-   cd fifa-world-cup-intelligence-hub
+A football scouting dashboard inspired by:
 
-   ```
-   
-## Set up a virtual environment
+* EA FC
+* FBRef
+* Sofascore
+* Transfermarkt
+
+### 🚀 Current Capabilities
+
+✅ Player search
+✅ Side-by-side comparison
+✅ Radar analytics
+✅ Player portraits
+✅ Archetype clustering
+✅ PCA visualization
+✅ Market value intelligence
+
+### ⚡ Example Comparisons
+
+* Messi vs Ronaldo
+* Mbappé vs Haaland
+* Pedri vs Bellingham
+
+---
+
+## 🧠 3. Machine Learning Player Clustering
+
+Players are grouped into football archetypes using:
+
+### 🔹 K-Means Clustering
+
+The system automatically identifies:
+
+* Attackers
+* Defensive Anchors
+* Elite Stars
+* Utility Midfielders
+* International Veterans
+* Aggressive Defenders
+
+### 🔹 PCA Dimensionality Reduction
+
+Projects footballers into a 2D intelligence map for interactive exploration.
+
+---
+
+## 📡 4. Real-Time Sentiment Engine *(Coming Soon)*
+
+Future module:
+
+* Live Twitter/X sentiment analysis
+* Match emotion tracking
+* Goal reaction spikes
+* NLP-powered fan mood detection
+
+Using:
+
+* Hugging Face Transformers
+* Plotly Dash
+* Twitter/X APIs
+
+---
+
+# 🧠 Machine Learning Pipeline
+
+## ⚽ Match Predictor
+
+| Component     | Details                    |
+| ------------- | -------------------------- |
+| Model         | Random Forest              |
+| Training Data | 964 FIFA World Cup matches |
+| Period        | 1930–2022                  |
+| Accuracy      | ~70%                       |
+| Framework     | Scikit-learn               |
+
+---
+
+## 🧬 Player Clustering Pipeline
+
+### Feature Engineering
+
+Players are transformed into advanced metrics:
+
+```python
+goals_per_90
+assists_per_90
+cards_per_90
+minutes_per_match
+international_caps
+market_value_in_eur
+```
+
+### ML Workflow
+
+```text
+Raw Match Data
+      ↓
+Player Aggregation
+      ↓
+Feature Engineering
+      ↓
+Standard Scaling
+      ↓
+K-Means Clustering
+      ↓
+PCA Visualization
+      ↓
+Interactive Dashboard
+```
+
+---
+
+# 📊 Tech Stack
+
+## 💻 Core Technologies
+
+| Category      | Stack                     |
+| ------------- | ------------------------- |
+| Language      | Python                    |
+| Dashboard     | Streamlit                 |
+| ML            | Scikit-learn              |
+| Data          | Pandas, NumPy             |
+| Visualization | Plotly, Matplotlib        |
+| NLP           | Hugging Face Transformers |
+| Deployment    | Streamlit Cloud           |
+
+---
+
+# 📂 Project Structure
 
 ```bash
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-Install dependencies
+fifa-world-cup-intelligence-hub/
+│
+├── app/
+│   ├── main.py
+│   └── pages/
+│       └── 1_Player_Dashboard.py
+│
+├── data/
+│   ├── results.csv
+│   ├── players.csv
+│   ├── appearances.csv
+│   ├── games.csv
+│   └── player_clusters.csv
+│
+├── models/
+│   ├── worldcup_predictor.pkl
+│   └── encoders.pkl
+│
+├── notebooks/
+│   ├── 01_match_predictor_prototype.ipynb
+│   └── 02_player_clustering.ipynb
+│
+├── src/
+│   └── predictor.py
+│
+├── requirements.txt
+│
+└── README.md
 ```
+
+---
+
+# ⚙️ Installation
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/manasscodes/fifa-world-cup-intelligence-hub.git
+
+cd fifa-world-cup-intelligence-hub
+```
+
+---
+
+## 2️⃣ Create Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+### macOS/Linux
+
+```bash
+source .venv/bin/activate
+```
+
+### Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+---
+
+## 3️⃣ Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-## Download the datasets
+---
 
-International Football Results (1872-2026)
-
-Place results.csv in the data/ folder.
-
-Run the app
+## 4️⃣ Run Streamlit App
 
 ```bash
 streamlit run app/main.py
 ```
 
-## 🧪 Model Details
+---
 
-Training data: 964 World Cup matches (1930–2022)
+# 📸 Screenshots
 
-Algorithm: Random Forest with balanced class weights
+## ⚽ Player Comparison Dashboard
 
-Accuracy: ~70% (on a 20% hold‑out test set)
+```text
+✅ Player portraits
+✅ Radar analytics
+✅ Archetype intelligence
+✅ Interactive comparisons
+```
 
-Features:
+---
 
-home_advantage
+## 📊 PCA Football Intelligence Map
 
-home_strength / away_strength (historical win rates)
+```text
+Clusters footballers by playstyle and performance profile.
+```
 
-home_gd / away_gd (average goal difference)
+---
 
-h2h_smart (head‑to‑head win ratio or strength‑based prior)
+# 🛣 Roadmap
 
-The model and all mappings are serialised with joblib in the models/ directory.
+## ✅ Completed
 
-## 📊 Example Predictions
+* Match prediction engine
+* Streamlit application
+* ML clustering pipeline
+* Player comparison radar
+* PCA visualization
+* Archetype intelligence system
 
-| Home Team | Away Team | Home Win | Draw | Away Win |
-|---|---|---|---|---|
-| Brazil | Germany | 45.2% | 27.1% | 27.7% |
-| Argentina | Germany | 13.1% | 33.5% | 53.4% |
-| Germany | Curaçao | 98.0% | 0.0% | 2.0% |
+---
 
-## 🛣 Roadmap
+## 🚀 Upcoming
 
-Match predictor model and Streamlit UI
+* FIFA-style stat cards
+* Similar player recommendation engine
+* Live sentiment tracker
+* Elo rating integration
+* Team chemistry analysis
+* xG / xA advanced metrics
+* Tactical formation intelligence
 
-Player performance clustering dashboard
+---
 
-Real‑time Twitter sentiment tracker
+# 🧪 Example Predictions
 
-Add 2026 World Cup fixture predictions
+| Fixture              | Home Win | Draw  | Away Win |
+| -------------------- | -------- | ----- | -------- |
+| Brazil vs Germany    | 45.2%    | 27.1% | 27.7%    |
+| Argentina vs Germany | 13.1%    | 33.5% | 53.4%    |
+| Germany vs Curaçao   | 98.0%    | 0.0%  | 2.0%     |
 
-Improve model with Elo ratings or recent form
+---
 
-## 🙋‍♂️ About This Project
-Built as a capstone personal project by Manas Kolaskar — a data science enthusiast passionate about football and machine learning. Every component was designed from scratch using public datasets and free tools.
+# 🌟 Why This Project Matters
+
+Modern football clubs increasingly rely on:
+
+* predictive analytics
+* player intelligence systems
+* machine learning scouting
+* performance visualization
+
+This project recreates core concepts used in professional football analytics environments using open data and accessible tooling.
+
+---
+
+# 👨‍💻 Author
+
+## Manas Kolaskar
+
+Aspiring AI/ML Engineer passionate about:
+
+* football analytics
+* machine learning
+* data storytelling
+* intelligent sports systems
+
+### 🌐 Connect
+
+* GitHub: [https://github.com/manasscodes](https://github.com/manasscodes)
+
+---
+
+# ⭐ Support
+
+If you liked this project:
+
+* ⭐ Star the repository
+* 🍴 Fork the project
+* 🧠 Share feedback
+* ⚽ Connect with fellow football + AI enthusiasts
+
+---
+
+<div align="center">
+
+# ⚽ Built With Data, Football, and Machine Learning
+
+<img src="https://media.giphy.com/media/l0HlQ7LRalQqdWfao/giphy.gif" width="100%" />
+
+</div>
